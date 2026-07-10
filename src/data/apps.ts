@@ -115,4 +115,25 @@ export const apps: AppInfo[] = [
     ],
     techStack: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS', 'SQLite'],
   },
+  {
+    id: 'social-media-dev',
+    name: 'VA Research Social Media Dev',
+    tagline: 'Manage VA research social media strategy and content',
+    description:
+      'A comprehensive platform for developing and managing social media strategy around VA research initiatives. Plan content, schedule posts, track engagement metrics, and collaborate with teams across the organization. Includes templates, analytics dashboards, and integration with research topics.',
+    icon: '📱',
+    iconBg: '#1976d2',
+    liveUrl: 'https://dbartlinski.github.io/va-research-social-media/',
+    githubUrl: 'https://github.com/DBartlinski/va-research-social-media',
+    tags: ['Social Media', 'Communications'],
+    features: [
+      'Social media content planning and calendar',
+      'Post scheduling across multiple platforms',
+      'Engagement analytics and performance tracking',
+      'Content template library with research themes',
+      'Team collaboration and approval workflows',
+      'Integration with research topics and studies',
+    ],
+    techStack: ['React', 'TypeScript', 'Vite', 'Chart.js'],
+  },
 ];
