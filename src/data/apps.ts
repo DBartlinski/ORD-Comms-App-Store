@@ -138,4 +138,25 @@ export const apps: AppInfo[] = [
     ],
     techStack: ['React', 'TypeScript', 'Vite', 'Tailwind CSS', 'Zustand'],
   },
+  {
+    id: 'email-report-cleaner',
+    name: 'Email Report Cleaner',
+    tagline: 'Outlook CSV to review-ready Markdown',
+    description:
+      'Converts Outlook CSV exports into clean, review-ready Markdown files entirely in your browser. Upload one or more Outlook CSV exports, set a date range, and the tool redacts email addresses, strips signatures and quoted reply history, and normalizes whitespace to produce a tidy archive ready for review — no server, no uploads, no installation required.',
+    icon: '📧',
+    iconBg: '#2563eb',
+    liveUrl: 'https://dbartlinski.github.io/email-report-cleaner-react/',
+    githubUrl: 'https://github.com/DBartlinski/email-report-cleaner-react',
+    tags: ['Productivity', 'Communications'],
+    features: [
+      'Runs entirely in your browser — files processed locally, never uploaded',
+      'Redacts email addresses and removes Exchange routing IDs and SafeLink tracking URLs',
+      'Strips known signatures/disclaimers and quoted reply history',
+      'Filters messages by date range, excluding out-of-range and undated entries',
+      'Instant conversion with no server or installation required',
+      'Download a clean, review-ready Markdown archive',
+    ],
+    techStack: ['React', 'JavaScript', 'PapaParse', 'GitHub Pages'],
+  },
 ];
