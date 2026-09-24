@@ -42,14 +42,16 @@ export default function AppDetail() {
               >
                 Open App
               </a>
-              <a
-                href={app.githubUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn btn-secondary"
-              >
-                View Source
-              </a>
+              {app.githubUrl && (
+                <a
+                  href={app.githubUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-secondary"
+                >
+                  View Source
+                </a>
+              )}
               {app.landingUrl && (
                 <a
                   href={app.landingUrl}

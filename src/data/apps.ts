@@ -6,7 +6,7 @@ export interface AppInfo {
   icon: string;
   iconBg: string;
   liveUrl: string;
-  githubUrl: string;
+  githubUrl?: string;
   tags: string[];
   features: string[];
   techStack: string[];
@@ -96,6 +96,27 @@ export const apps: AppInfo[] = [
       'All processing happens locally in your browser',
     ],
     techStack: ['Python', 'HTML', 'JavaScript'],
+  },
+  {
+    id: 'va-publications-combined-analysis',
+    name: 'VA Publications Combined Analysis Dashboard',
+    tagline: 'Interactive analysis of 147K+ VA-affiliated publications',
+    description:
+      'Interactive Streamlit dashboard analyzing 147K+ VA-affiliated publications (2016-2025) from merged Dimensions batch exports. Supports filtering by preprint status, ORD funding, calendar/fiscal year, facility, research topics (RCDC/HRCS/etc.), and free-text search. Tracks publication trends, author/facility activity, and inferred ORD portfolio attribution.',
+    icon: '📈',
+    iconBg: '#00695c',
+    liveUrl: 'https://pubtracker-kvugzonttc6bimytdydhqv.streamlit.app/',
+    tags: ['Data & Analytics', 'Research'],
+    features: [
+      'Analyzes 147K+ VA-affiliated publications from 2016-2025',
+      'Filter by preprint status, ORD funding, and calendar/fiscal year',
+      'Filter by facility and research topics (RCDC/HRCS/etc.)',
+      'Free-text search across the merged publication dataset',
+      'Tracks publication trends and author/facility activity',
+      'Inferred ORD portfolio attribution',
+      'Light/dark mode support',
+    ],
+    techStack: ['Python', 'Streamlit'],
   },
   {
     id: 'knowledge-repository',
